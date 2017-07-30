@@ -18,7 +18,7 @@ sudo apt-get install python3 python3-pip python3-venv</pre>
 ### 2. 레포지터리 클론 및 이동
 <code>git clone https://github.com/rackis/kakao <kakao> </code>
 
-<code>cd <kakao></code>
+<code>cd <kakao> </code>
 ### 3. python 가상환경 구축 및 실행
 <pre><code>python3 -m venv myvenv
 source myvenv/bin/activate
