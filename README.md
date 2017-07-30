@@ -1,4 +1,3 @@
-# 효암 급식봇
 > 이 소스는 MIT라이선스 하에 자유롭게 이용할 수 있습니다.
 
 ### 개발 참고 사이트
@@ -8,17 +7,14 @@
 * http://sigool.tistory.com/4
 * 기타 많은 사이트들..
 
-### 플러스 친구 추가
-* [@hyoammeal](http://pf.kakao.com/_YYTMxl) 효암 급식봇 
-
 # 설치법
 ### 1. 기초 패키지 설치
 <pre> sudo apt-get update
 sudo apt-get install python3 python3-pip python3-venv</pre>
 ### 2. 레포지터리 클론 및 이동
-<code>git clone https://github.com/rackis/kakao <kakao> </code>
+<code>git clone https://github.com/rackis/kakao kakao </code>
 
-<code>cd <kakao> </code>
+<code>cd kakao </code>
 ### 3. python 가상환경 구축 및 실행
 <pre><code>python3 -m venv myvenv
 source myvenv/bin/activate
