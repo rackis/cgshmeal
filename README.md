@@ -11,32 +11,14 @@
 ### 플러스 친구 추가
 * [@hyoammeal](http://pf.kakao.com/_YYTMxl) 효암 급식봇 
 
-### 개발 환경
-* Amazon Web Service (EC2, Ubuntu 16.04)
-* PyCharm
-* Git
-
-### 사용 언어
-* Django
-* Python + venv
-
-### 필요 모듈
-* beautifulsoup4
-* urllib
-* lxml
-
 # 설치법
-## 유의사항
-혹시나 아마존 AWS EC2 우분투를 이용하는 경우 로케일 문제로 오류가 잦다.
-http://egloos.zum.com/killins/v/3014274를 보고 로케일을 수정하자.
-
 ### 1. 기초 패키지 설치
 <pre> sudo apt-get update
 sudo apt-get install python3 python3-pip python3-venv</pre>
 ### 2. 레포지터리 클론 및 이동
-<code>git clone https://github.com/SerenityS/kakaobot_hyoammeal <working_dir> </code>
+<code>git clone https://github.com/rackis/kakao <kakao> </code>
 
-<code>cd <working_dir></code>
+<code>cd <kakao></code>
 ### 3. python 가상환경 구축 및 실행
 <pre><code>python3 -m venv myvenv
 source myvenv/bin/activate
@@ -75,19 +57,3 @@ curl -XPOST 'http://host-ip:8000/message' -d '{ "user_key": "encryptedUserKey", 
   <pre>serenitys@serenitys-X34:~$ curl -XPOST (생략)
 {"keyboard": {"type": "buttons", "buttons": ["\uc870\uc2dd", "\uc911\uc2dd", "\uc11d\uc2dd", "\ub0b4\uc77c\uc758 \uc870\uc2dd", "\ub0b4\uc77c\uc758 \uc911\uc2dd", "\ub0b4\uc77c\uc758 \uc11d\uc2dd"]}, "message": {"text": "07\uc6d4 19\uc77c \uc218\uc694\uc77c \uc911\uc2dd \uba54\ub274\uc785\ub2c8\ub2e4. \n \n\ub098\ubb3c\ube44\ube54\ubc25/\uc57d\uace0\ucd94\uc7a5\n\uac10\uc790\ub41c\uc7a5\uad6d\n\uc18c\uc13</pre>
 와 같이 반환됨을 확인함으로서 정상 작동함을 알 수 있다.
-### 7. 학교 코드 수정
-타학교에서 사용하기 위해선 학교 코드 수정이 필요하다.
-
-hyoammeal/views.py를 열어보자.
-```python
-# 타학교에서 이용시 수정
-regionCode = 'gne.go.kr'
-schulCode = 'S100000747'
-```
-라는 코드를 발견할 수 있다.
-여기서 regionCode는 각 시도교육청의 주소이며, schulCode는 [링크](http://weezzle.tistory.com/559) 를 참조하도록 하자.
-  
-### 8. 카카오톡 플러스 친구와 연동
-타게시물들을 참조하도록 하자.
-
-## 작동 화면
