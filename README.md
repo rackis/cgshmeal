@@ -12,7 +12,7 @@
 <pre> sudo apt-get update
 sudo apt-get install python3 python3-pip python3-venv</pre>
 ### 2. 레포지터리 클론 및 이동
-<code>git clone https://github.com/rackis/kakao kakao </code>
+<code>git clone https://github.com/rackis/cgshmeal kakao </code>
 
 <code>cd kakao </code>
 ### 3. python 가상환경 구축 및 실행
@@ -31,7 +31,7 @@ source myvenv/bin/activate
 System check identified no issues (0 silenced).
 July 19, 2017 - 19:18:53
 Django version 1.11.3, using settings 'kakaobot.settings'
-Starting development server at http://host-ip:8000/
+Starting development server at http://host-ip:8000/ (0.0.0.0:8000)
 Quit the server with CONTROL-C.</code></pre>
 여의치 않다면 127.0.0.1 루프백으로 두고 실행해서 테스트해도 된다.
 ### 6. 동작 확인
