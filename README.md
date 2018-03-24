@@ -62,7 +62,7 @@ sudo apt-get install fonts-unfonts-core ibus ibus-hangul -y
 ### 1. 기초 패키지 설치
 * 업데이트 실시 - 자율 실시
 <pre>sudo apt-get update
-sudo apt-get upgrade<</pre>
+sudo apt-get upgrade</pre>
 * 파이썬 패키지 설치 - 라즈베리파이의 경우 미리 설치되어 있다.
 <pre>sudo apt-get install python3 python3-pip python3-venv</pre>
 * 깃 클론
@@ -119,6 +119,11 @@ Django version 1.11.3, using settings 'kakaobot.settings'
 Starting development server at http://host-ip:8000/
 Quit the server with CONTROL-C.</code></pre>
 여의치 않다면 127.0.0.1 루프백으로 두고 실행해서 테스트해도 된다.
+
+**앞으로 서버 재실행시에는 터미널에서 아래 코드를 한꺼번에 붙여넣어 편리하게 사용하자.
+<pre>cd /home/pi/Desktop/KAKAO
+source myvenv/bin/activate
+./Start.sh</pre>
 
 ### 5. 동작 확인
 카카오톡 플러스친구 자동등답 API에선 http://host-ip:8000/keyboard/에 대한 반응을 필수로 요구한다.
