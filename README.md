@@ -106,6 +106,10 @@ crontab -e
 0 0 * * 7 cd ~/Desktop/KAKAO/data/mealdb && /usr/bin/python3 ~/Desktop/KAKAO/cgsh/crawl.py
 ```
 
+### 3-1. 시간표 출력하기
+* 시간표 파일은 자신이 직접 입력해야 한다.(/data/schedb)
+* 처음 해보는 거라 코드가 엉망이고, 제대로 구현하지도 못해서 3학년 5반 - 7반(이과반) 까지만 시간표를 제공할 수 있다.
+
 ### 4. 마이그레이션, 서버 실행
 <code>python3 manage.py migrate</code>
 
